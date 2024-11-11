@@ -21,7 +21,7 @@ repository               : "dhruv-menon/dhruv-menon.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.PNG"
   name             : "Dhruv Menon"
   pronouns         : # example: "she/her"  
   bio              : "Doctoral Candidate"
