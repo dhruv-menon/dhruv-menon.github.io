@@ -1,13 +1,15 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Computational Molecular Architectonics of Framework Materials"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+The ability to establish (precise) control over empty space at nanometer scales lends itself to interesting avenues across energy applications, chemistry, and medicine. For instance, establishing sub-angstrom level control over empty space (porosity) allows the selective capture and separation of similarly sized gases such as carbon dioxide and nitrogen, advancing carbon capture efforts. Porosity can also be leveraged as 'nano-reactors' for catalysis or drug delivery vehicles, wherein large-quantities of drugs are encapsulated in porous space, and delivered specifically to target sites within the body. The realization of molecular materials capable of exhibiting a high-degree of controllable porosity was for a long time considered impossible due to the age-old perception that 'nature abhors vacuum', however the emergence of 'reticular chemistry' facilitated the geometry-guided design of periodically-extended crystalline porous framework materials. I spend my time developing and using computational approaches for architecting novel framework materials. Given the universality of the approaches I use, I'm able to work in domains spanning from drug delivery to gas capture and separation to catalysis. However, I most interested in the biomedical applications of these materials.  
+
+This website is dedicated as a medium for me to share my research and perspectives with those who are interested.  
 
 A data-driven personal website
 ======
