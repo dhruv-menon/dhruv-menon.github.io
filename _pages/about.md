@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 The ability to establish *(precise)* control over empty space at nanometer scales lends itself to interesting avenues across **energy applications, chemistry, and medicine**. For instance, establishing sub-angstrom level control over empty space (porosity) allows the selective capture and separation of similarly sized gases such as carbon dioxide and nitrogen, advancing carbon capture efforts. Porosity can also be leveraged as *'nano-reactors'* for catalysis or drug delivery vehicles, wherein large-quantities of drugs are encapsulated in porous space, and delivered specifically to target sites within the body. The realization of molecular materials capable of exhibiting a high-degree of controllable porosity was for a long time considered impossible due to the age-old perception that *'nature abhors vacuum'*, however the emergence of **'reticular chemistry'** facilitated the geometry-guided design of periodically-extended crystalline porous framework materials. I spend my time developing and using **computational approaches** for architecting novel framework materials. Given the universality of the approaches I use, I'm able to work in domains spanning from drug delivery to gas capture and separation to catalysis. However, I'm most interested in the biomedical applications of these materials.  
-**This website is dedicated as a medium for me to share my research and perspectives with those who are interested.**  
+**This website is intended as a medium for me to share my research and perspectives with those who are interested.**  
 
 A data-driven personal website
 ======
