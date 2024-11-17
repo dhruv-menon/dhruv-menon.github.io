@@ -1,0 +1,266 @@
+.team-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .team-container {
+        display: grid;
+    }
+}
+
+.team-subtitle {
+    text-align: left;
+    font-size: 25px;
+    margin: 10px 0 5px 0;
+    color: #000000;
+    font-family: "Nanum Myeongjo", "Garamond", serif;
+    /*font-family: "Roboto", "Arial", sans-serif;*/
+    font-weight: 300;
+}
+
+.team-list {
+    text-align: left;
+    /*font-size: 18px;*/
+    margin: 0;
+    /*padding-top: 30px;*/
+    color: #000000;
+    line-height: 110%;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 300;
+    padding-inline-start: 0px;
+    list-style: none;
+}
+
+.team-list li {
+    padding: 5px 12px 0px 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.team-sublist {
+    padding-inline-start: 14px;
+    font-size: 16px;
+}
+
+.team-sublist li {
+    padding-top: 5px;
+}
+
+.team-text {
+    text-align: left;
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+    padding-top: 30px;
+    color: #000000;
+    line-height: 160%;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 300;
+}
+
+.team-text-block {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .team-text-block {
+        padding-right: 10px;
+    }
+}
+
+.team-text-block a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.team-text-block a:hover {
+    text-decoration: underline;
+}
+
+.team-image-block {
+    flex: 1;
+}
+
+.team-image-block img {
+    width: 100%;
+    height: auto;
+    padding-top: 160px;
+}
+
+@media (max-width: 768px) {
+    .team-image-block img {
+        padding-top: 80px;
+    }
+}
+
+.teamshelf-container {
+  display: flex;
+  flex-flow: wrap;
+  max-width: 1500px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.team-cell {
+  width: 24.7%;
+  /*min-height: 10rem;*/
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  /*border-bottom: 1px;
+  border-style: solid;
+  border-color: #cccccc;*/
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 3%;
+  /*padding-bottom: 5%;*/
+}
+
+
+.team-cell > img {
+  width: 50%;
+  /*border: solid black;*/
+}
+
+.team-cell > ul {
+  width: 60%;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+}
+
+.team-cell > p {
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+h4 + p {
+  margin-top: 0;
+  width: 60%;
+  text-align: center;
+}
+
+.team-cell:nth-child(4n + 1) {
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.team-cell:nth-child(4n + 2) {
+  /*border-left: 1px;
+  border-right: 0px;
+  border-style: solid;
+  border-color: #cccccc;*/
+}
+
+.team-cell:nth-child(4n + 3) {
+  /*border-left: 1px;
+  border-right: 0px;
+  border-style: solid;
+  border-color: #cccccc;*/
+}
+
+.team-cell:nth-child(4n + 4) {
+  /*border-left: 1px;
+  border-right: 0px;
+  border-style: solid;
+  border-color: #cccccc;*/
+}*/
+
+
+@media screen and (max-width: 1024px) {
+  .team-cell {
+    width: 30%;
+    padding-top: 40px;
+  }
+
+  .team-cell > p {
+    width: 90%;
+    text-align: center;
+  }
+
+  .team-cell > h4 {
+    margin-top: 8px;
+  }
+
+  .team-cell:nth-child(3n + 1) {
+    border-left: 0px;
+    border-right: 0px;
+  }
+
+  .team-cell:nth-child(3n + 2) {
+    /*border-left: 1px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: #cccccc;*/
+  }
+
+  .team-cell:nth-child(3n + 3) {
+    /*border-left: 1px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: #cccccc;*/
+  }
+}
+
+@media screen and ((max-device-width: 900px) or (max-width: 900px)){
+  .team-cell {
+    width: 45%;
+    padding-top: 40px;
+  }
+
+  .team-cell > p {
+    width: 90%;
+    text-align: center;
+  }
+
+  .team-cell > h4 {
+    margin-top: 8px;
+  }
+
+  .team-cell:nth-child(odd) {
+    border-left: 0px;
+    border-right: 0px;
+
+  }
+
+  .team-cell:nth-child(even) {
+    /*border-left: 1px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: #cccccc;*/
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  .header-container {
+	font-size: 115px;
+	height: 270px;
+  }
+
+  .team-cell {
+    width: 100%;
+    height: 100%;
+  }
+
+  .team-cell > p {
+    width: 90%;
+    text-align: center;
+	font-size: 30px;
+  }
+
+  .team-cell > h4 {
+    margin-top: 8px;
+	font-size: 32px;
+  }
+
+  .team-cell:nth-child(n) {
+    border: 0px;
+  }
+}

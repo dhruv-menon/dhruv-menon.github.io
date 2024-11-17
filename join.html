@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQ6FCXS2D2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-EQ6FCXS2D2');
+    </script>
+    <title>Join us | Evolutionary Design</title>
+    <meta http-equiv="Content-Type" content="text/html"> 
+    <meta name="description" content="Laboratory of Evolutionary Design">
+    <meta name="keywords" content="brian hie, laboratory of evolutionary design, stanford university, arc institute, machine learning, ai, biology">
+    <meta name="author" content="Brian Hie">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:url" content="https://evodesign.org/join" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Join us | Laboratory of Evolutionary Design" />
+    <meta property="og:image" content="/images/stanford_foothills.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@brianhie" />
+    <meta name="twitter:title" content="Join us | Laboratory of Evolutionary Design" />
+    <meta name="twitter:image" content="https://evodesign.org/images/stanford_foothills.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="ledlab.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.svg">
+    <script src="ledlab.js"></script>
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+    <script>renderNav('./navbar.html')</script>
+
+    <div class="outer-container">
+      <div class="container">
+        <div class="about-container">
+          <div class="about-text-block">
+            <div class="title2" style="padding: 140px 0 0px 0;">
+              <p>
+                Joining
+              </p>
+            </div>
+            <p class="about-text">
+              Please consider joining our mission to develop safe and effective biological AI.
+              We will also have a lot of fun along the way.
+              If interested, you can directly <a href="#stanford-jobs">join our Stanford lab</a> or collaborate with us through a <a href="#arc-jobs">position at Arc Institute</a>.
+            </p>
+
+            <div id="stanford-jobs" class="join-section-anchor"></div>
+            
+            <p class="title2" style="font-size: 28px;">
+              Positions at Stanford
+            </p>
+
+            <p class="join-subtitle">
+              Postdoctoral fellows
+            </p>
+            <p class="join-text">
+              We are recruiting for two postdoc positions.
+              (1) The first is a joint postdoc at Arc Institute with the <a href="https://arcinstitute.org/labs/hsulab">Hsu Lab</a> focused on integrating synthetic biology with modern machine learning applications.
+              (2) The second is a position in molecular machine learning, with an ideal candidate having a background in large language models, reinforcement learning, and/or geometric deep learning.
+              Please <a href="mailto:evodesign-hie@stanford.edu">contact us directly</a> with a CV and a short description of how your career plans align with our mission.
+            </p>
+
+            <p class="join-subtitle">
+              Graduate students
+            </p>
+            <p class="join-text">
+              We are especially excited about mentoring the next generation of scientists.
+              If you have been admitted to a graduate program at Stanford University and are interested in conducting your PhD in our lab, please directly <a href="mailto:evodesign-hie@stanford.edu">send us an email</a> with a CV and a description of a project that you are especially proud of.
+            </p>
+
+          </div>
+          <div class="about-image-block">
+            <img src="images/darwin-notebook.jpg" style="padding-top: 230px;" id="join-first-img">
+          </div>
+        </div>
+
+        <div class="about-container">
+          <div class="about-image-block"  id="join-second-img">
+            <img src="images/wallace-butterflies-cropped.jpg" style="padding-top: 50px;">
+          </div>
+          <div class="about-text-block" id="join-second-text">
+
+            <div id="arc-jobs" class="join-section-anchor"></div>
+            
+            <p class="title2" style="font-size: 28px;">
+              Positions at Arc Institute
+            </p>
+
+            <!--p class="join-subtitle">
+              Director or Associate Director of Bioinformatics
+            </p>
+            <p class="join-text">
+              Arc is recruiting a Director or Associate Director of Bioinformatics to oversee the development of complex models of biological systems.
+              Please <a href="https://boards.greenhouse.io/arcinstitute/jobs/4709422004">consult this job posting and apply</a> if you are interested.
+            </p-->
+
+            <p class="join-subtitle">
+              Software engineering and machine learning
+            </p>
+            <p class="join-text">
+              Arc offers an environment for biological AI research with access to world-class resources for computation and experimental validation.
+              Please regularly consult the <a href="https://arcinstitute.org/jobs">Arc Institute careers page</a> for future job openings in machine learning and software engineering and feel free to <a href="mailto:evodesign-hie@stanford.edu">contact us directly</a> with any enquiries.
+            </p>
+
+          </div>
+        </div>
+        
+        <footer id="footer"></footer>
+        <script>
+          fetch('./footer.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('footer').innerHTML = data);
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
