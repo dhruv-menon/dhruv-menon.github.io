@@ -1,0 +1,76 @@
+/* General Page Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9fafb; /* Light background for better readability */
+    padding: 20px;
+}
+
+/* Section Title */
+h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #1a202c; /* Dark gray */
+    text-align: center; /* Center-align the main section title */
+}
+
+/* Publication Titles */
+h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: #2d3748; /* Slightly lighter gray */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect for Titles */
+h4:hover {
+    color: #007acc; /* Change color on hover */
+    cursor: pointer;
+}
+
+/* Descriptions */
+p {
+    margin-bottom: 1rem;
+    color: #4a5568; /* Muted gray */
+}
+
+/* Links */
+a {
+    color: #007acc; /* Blue */
+    text-decoration: none;
+    font-weight: bold;
+    position: relative; /* For arrow styling */
+}
+
+/* Add Arrow Styling for Links */
+a::after {
+    content: " →";
+    color: #007acc; /* Match the link color */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect for Links */
+a:hover::after {
+    transform: translateX(5px); /* Move the arrow slightly to the right */
+}
+
+/* Horizontal Rule */
+hr {
+    border: none;
+    border-top: 2px dashed #e2e8f0; /* Dashed line */
+    margin: 2rem 0;
+}
+
+/* Container for Publications */
+.publications-container {
+    max-width: 800px;
+    margin: 0 auto; /* Center the content */
+    padding: 20px;
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}

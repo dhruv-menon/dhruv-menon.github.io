@@ -1,0 +1,38 @@
+[[main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[main]]
+    identifier = "publications"
+    name = "Publications"
+    url = "/publications"
+    weight = 2
+
+[[main]]
+    identifier = "reflections"
+    name = "Reflections"
+    url = "/reflections"
+    weight = 3
+
+[[main]]
+    identifier = "notebook"
+    name = "Notebook"
+    url = "/notebook"
+    weight = 4
+
+    
+# Social Media Configuration
+
+[[social]]
+    identifier = "linkedin"
+    name = "Linkedin"
+    url = "https://www.linkedin.com/in/dhruv-menon/"
+    weight = 1
+
+[[social]]
+    identifier = "scholar"
+    name = "Google Scholar"
+    url = "https://scholar.google.com/citations?user=NMOjZLQAAAAJ&hl=en"
+    weight = 2
