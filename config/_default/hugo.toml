@@ -7,6 +7,7 @@ title = 'Dhruv Menon'
 enableRobotsTXT = true
 summaryLength = 15
 paginate = 5
+relativeURLs = true
 
 
 [markup]
