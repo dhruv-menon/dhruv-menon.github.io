@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhruv Menon | About</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fontsource/libertinus-sans@5.2.6/index.css"
+    />
+    <style>
+      :root {
+        --background: #4b6144;
+        --main: #1a1a1a;
+        --highlight: #f0f057;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 3vh;
+        min-height: 100%;
+      }
+
+      body {
+        background: var(--background);
+        color: var(--main);
+        font-family: "Libertinus Sans", monospace;
+        display: grid;
+        grid-template-columns: 1fr minmax(320px, 34vw) 1fr;
+        min-height: 100vh;
+        padding: 18px 0;
+      }
+
+      main {
+        grid-column: 2;
+        min-height: calc(100vh - 36px);
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 16px;
+      }
+
+      p {
+        margin: 0 0 16px;
+        font-size: 12px;
+        line-height: 1.25;
+      }
+
+      ul {
+        margin: 0 0 16px;
+        font-size: 12px;
+        line-height: 1.25;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: var(--highlight);
+      }
+
+      .back {
+        margin-top: 12px;
+        font-size: 11px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>About</h1>
+      <p>i am a molecular architect (of sorts) spending most of my youth developing computational models for the discovery & design of new materials 
+        - occassionally succesfully. i also have interests in the mechanistic underpinnings of the behaviour of these materials in applications ranging
+       from medicine to energy.</p>
+      <p>i am a third year phd student in chemical engineering at the <strong>university of cambridge</strong> working with professor david fairen-jimenez. 
+        in 2025 i undertook a research fellowship at <strong>university of california, berkeley</strong> with professor omar yaghi (<strong>nobel prize in chemistry</strong>). 
+        prior to this, i completed a masters in physics at the <strong>cavendish laboratory</strong>, cambridge and a bachelors in materials science at the <strong>indian institute of technology gandhinagar</strong>.
+      </p>
+      <p>areas of research i am interested in (no particular order): 
+        <ul>
+          <li>de novo molecular design</li>
+          <li>language models; diffusion models; flow models</li>
+          <li>metal-organic frameworks; supramolecular materials</li>
+          <li>physisorptive carbon capture</li>
+          <li>hydrogen/methane storage</li>
+          <li>proton transport</li>
+          <li>heterogeneous catalysis (although my knowledge here is found wanting, i find these papers super cool)</li>
+          <li>drug delivery (potentially cool, but MOF research on it is a mess, so I consider myself a curious observer)</li>
+        </ul>
+      </p>
+       <p>despite my more than fair share of problems with academia, i find myself quite drawn to science and all the baggage that it comes with; 
+        someday however, i may leave all this behind to become a pilot [...] until then, i am always open to discussing science. if you're curious
+        about my work - reach out at dm958[at]cam[dot]ac[dot]uk
+      </p>
+      <p class="back"><a href="index.html">&larr; back</a></p>
+    </main>
+  <script>
+  document.querySelectorAll('a[href$=".pdf"]').forEach((a) => {
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
+</script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhruv Menon | Key Works</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fontsource/libertinus-sans@5.2.6/index.css"
+    />
+    <style>
+      :root {
+        --background: #4b6144;
+        --main: #1a1a1a;
+        --highlight: #f0f057;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 2vh;
+        min-height: 100%;
+      }
+
+      body {
+        background: var(--background);
+        color: var(--main);
+        font-family: "Libertinus Sans", monospace;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      main {
+        width: min(560px, 100%);
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: 18px;
+      }
+
+      p {
+        margin: 0 0 10px;
+        font-size: 12px;
+        line-height: 1.35;
+      }
+
+      #main_table {
+        margin-top: 12px;
+        border-collapse: separate;
+        border-spacing: 18px 0;
+        table-layout: fixed;
+        width: 100%;
+      }
+
+      #main_table th {
+        font-weight: normal;
+        padding: 5px 0;
+        vertical-align: top;
+      }
+
+      #main_table th:nth-child(1) {
+        width: 92px;
+        text-align: left;
+      }
+
+      #main_table th:nth-child(2) {
+        width: auto;
+        padding-left: 34px;
+      }
+
+      .year {
+        display: block;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 0.86;
+      }
+
+      .location {
+        display: block;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 0.95;
+        margin-top: 2px;
+      }
+
+      .topic {
+        text-align: right;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 0.95;
+      }
+
+      .topic-link {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .topic-link:hover {
+        color: var(--highlight);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: var(--highlight);
+      }
+
+      .back {
+        margin-top: 12px;
+        font-size: 11px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Key Works</h1>
+      <p>in science, writing is the <a href = 'https://www.nature.com/articles/s41587-025-02584-1'>'only thing we do that matters'</a>. i spend a great deal of time thinking and writing - as a consequence, i am quite active in publishing my work. 
+      while my articles generally focus on computational aspects of materials discovery & design for drug delivery, gas capture & separation, and catalysis, i also publish reviews & commentaries on broader aspects of biology, energy & environment.
+      a core theme of all my work is 'rational' materials design [...]
+      </p>
+      <p>[...] Some of my key works are included below. Works marked with (<sup>&beta;</sup>) are upcoming. Not all work listed here has been led by me, but I tend to make substantial intellectual contributions to all the published work i am involved in.</p>
+      <table id="main_table" aria-label="previous work">
+        <tr>
+          <th><span class="year">2026</span><span class="location">Cambridge/Gandhinagar</span></th>
+          <th class="topic"><a class="topic-link" href="#">rare earth element recovery & heavy-metal sequestration using metal-organic frameworks<sup>&beta;</sup></a></th>
+        </tr>
+        <tr>
+          <th><span class="year">2025</span><span class="location">Berkeley</span></th>
+          <th class="topic"><a class="topic-link" href="#">chemical language models for inverse metal-organic framework design<sup>&beta;</sup></a></th>
+        </tr>
+        <tr>
+          <th><span class="year">2025</span><span class="location">Cambridge</span></th>
+          <th class="topic"><a class="topic-link" href="#">supramolecular materials for proton transport<sup>&beta;</sup></a></th>
+        </tr>
+        <tr>
+          <th><span class="year">2025</span><span class="location">Cambridge</span></th>
+          <th class="topic"><a class="topic-link" href="library/2025 - structuring.pdf">the structuring of reticular materials for industrial-scale applications</a></th>
+        </tr>
+        <tr>
+          <th><span class="year">2024</span><span class="location">Cambridge</span></th>
+          <th class="topic"><a class="topic-link" href="library/2025 - flexibility.pdf">lock-and-key CO<sub>2</sub> capture in a flexibility-frustrated metal-organic framework</a></th>
+        </tr>
+        <tr>
+          <th><span class="year">2024</span><span class="location">Cambridge</span></th>
+          <th class="topic"><a class="topic-link" href="library/2025 - pancreatic.pdf">screening metal-organic frameworks for pancreatic cancer therapy - from ml to in vivo efficacy</a></th>
+        </tr>
+        <tr>
+          <th><span class="year">2024</span><span class="location">Cambridge</span></th>
+          <th class="topic"><a class="topic-link" href="library/2025 - biocompatibility.pdf">guiding the rational design of metal-organic frameworks for drug delivery</a></th>
+        </tr>
+        <tr>
+          <th><span class="year">2022</span><span class="location">Gandhinagar</span></th>
+          <th class="topic"><a class="topic-link" href="library/2022 - doping.pdf">stabilising cu(II)-paddlewheel metal-organic frameworks using dopant introduction</a></th>
+        </tr>
+      </table>
+      <p class="back"><a href="index.html">&larr; back</a></p>
+    </main>
+  <script>
+  document.querySelectorAll('a[href$=".pdf"]').forEach((a) => {
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
+</script>
+  </body>
+</html>
