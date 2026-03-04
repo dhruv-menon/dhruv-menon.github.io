@@ -23,7 +23,7 @@ body {
   background-color: var(--background);
   color: var(--main);
   font-family: "Libertinus Sans", monospace;
-  font-size: 10px;
+  font-size: clamp(11px, 0.7vw, 14px);
   line-height: 1;
   display: flex;
   align-items: center;
@@ -32,7 +32,7 @@ body {
 }
 
 #page {
-  width: min(320px, 92vw);
+  width: min(460px, 92vw);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +50,7 @@ body {
 #face {
   margin: 0;
   display: block;
-  width: 210px;
+  width: clamp(210px, 23vw, 260px);
   max-width: none;
   height: auto;
   image-rendering: pixelated;
@@ -60,7 +60,7 @@ body {
   margin: 6px 0 0;
   width: max-content;
   text-align: center;
-  font-size: 14px;
+  font-size: clamp(16px, 1.5vw, 22px);
   font-weight: 700;
 }
 
@@ -75,7 +75,7 @@ body {
 
 #subtitle {
   margin: 4px 0 0;
-  font-size: 9px;
+  font-size: clamp(10px, 0.85vw, 13px);
   line-height: 1.2;
   text-align: center;
   width: 100%;
@@ -107,21 +107,21 @@ body {
 .year {
   display: block;
   font-weight: 800;
-  font-size: 20px;
+  font-size: clamp(22px, 2vw, 30px);
   line-height: 0.86;
 }
 
 .location {
   display: block;
   font-weight: 400;
-  font-size: 12px;
+  font-size: clamp(13px, 1vw, 16px);
   line-height: 0.95;
   margin-top: 2px;
 }
 
 .topic {
   text-align: right;
-  font-size: 12px;
+  font-size: clamp(13px, 1.05vw, 17px);
   font-weight: 400;
   line-height: 0.95;
   padding-left: 0;
@@ -141,7 +141,7 @@ body {
   margin: 4px 0 0;
   width: 100%;
   text-align: right;
-  font-size: 9px;
+  font-size: clamp(10px, 0.8vw, 12px);
 }
 
 #previous a {
@@ -163,7 +163,7 @@ body {
 
 #links {
   margin: 0;
-  font-size: 10px;
+  font-size: clamp(11px, 0.8vw, 14px);
 }
 
 #links a {
@@ -177,7 +177,7 @@ body {
 
 #credit {
   margin: 2px 0 0;
-  font-size: 8px;
+  font-size: clamp(9px, 0.7vw, 11px);
 }
 
 #credit a {
