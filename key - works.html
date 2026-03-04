@@ -31,7 +31,7 @@
         font-family: "Libertinus Sans", monospace;
         display: grid;
         place-items: center;
-        padding: 24px;
+        padding: 16px;
       }
 
       main {
@@ -64,13 +64,12 @@
       }
 
       #main_table th:nth-child(1) {
-        width: 92px;
+        width: 64px;
         text-align: left;
       }
 
       #main_table th:nth-child(2) {
         width: auto;
-        padding-left: 34px;
       }
 
       .year {
@@ -93,6 +92,7 @@
         font-size: 12px;
         font-weight: 400;
         line-height: 0.95;
+        padding-left: 0;
       }
 
       .topic-link {
@@ -117,6 +117,38 @@
         margin-top: 12px;
         font-size: 11px;
       }
+
+      @media (max-width: 700px) {
+        body {
+          padding: 10px;
+        }
+
+        main {
+          width: min(420px, 100%);
+        }
+
+        h1 {
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 11px;
+          line-height: 1.25;
+        }
+
+        .year {
+          font-size: 17px;
+        }
+
+        .location {
+          font-size: 11px;
+        }
+
+        .topic {
+          font-size: 11px;
+          line-height: 0.95;
+        }
+      }
     </style>
   </head>
   <body>
@@ -129,7 +161,7 @@
       <p>[...] Some of my key works are included below. Works marked with (<sup>&beta;</sup>) are upcoming. Not all work listed here has been led by me, but I tend to make substantial intellectual contributions to all the published work i am involved in.</p>
       <table id="main_table" aria-label="previous work">
         <tr>
-          <th><span class="year">2026</span><span class="location">Cambridge/Gandhinagar</span></th>
+          <th><span class="year">2026</span><span class="location">Cambridge</span></th>
           <th class="topic"><a class="topic-link" href="#">rare earth element recovery & heavy-metal sequestration using metal-organic frameworks<sup>&beta;</sup></a></th>
         </tr>
         <tr>
