@@ -1,1 +1,14 @@
 .DS_Store
+._*
+
+# Local-only drafts that should not be published to GitHub Pages.
+archive/
+
+# Editor and OS metadata.
+.vscode/
+.idea/
+
+# Static-site dependency/build leftovers, if you experiment later.
+node_modules/
+dist/
+build/

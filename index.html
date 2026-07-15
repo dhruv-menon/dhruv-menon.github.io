@@ -1,57 +1,227 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Academic portfolio" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dhruv Menon: machine learning, AI4Science, molecular modelling, and research engineering portfolio.">
     <title>Dhruv Menon</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fontsource/libertinus-sans@5.2.6/index.css"
-    />
-    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
+    <link rel="icon" href="assets/favicon.png?v=2" type="image/png">
+    <link rel="shortcut icon" href="assets/favicon.ico?v=2">
+    <link rel="stylesheet" href="styles.css?v=3">
   </head>
   <body>
-    <div id="page">
-      <div id="identity">
-        <img id="face" src="menon - banner - backup.png" alt="Dhruv Menon portrait banner" />
-        <h1 id="name"><a id="name-link" href="about.html">Dhruv Menon</a></h1>
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <nav class="nav" id="toc-list" aria-label="Table of contents"></nav>
       </div>
-      <p id="subtitle"><em>de novo</em> design . molecular design . generative deep learning . materials chemistry</p>
+    </aside>
 
-      <table id="main_table" aria-label="selected work">
-        <tr>
-          <th><span class="year">2025</span><span class="location">Berkeley</span></th>
-          <th class="topic"><a class="topic-link" href="#">Chemical language models for inverse MOF design</a></th>
-        </tr>
-        <tr>
-          <th><span class="year">2025</span><span class="location">Cambridge</span></th>
-          <th class="topic"><a class="topic-link" href="library/2026 - proton.pdf">Supramolecular materials for proton transport</a></th>
-        </tr>
-        <tr>
-          <th><span class="year">2024</span><span class="location">Cambridge</span></th>
-          <th class="topic"><a class="topic-link" href="library/2025 - flexibility.pdf">Physisorptive carbon capture</a></th>
-        </tr>
-        <tr>
-          <th><span class="year">2023</span><span class="location">Cambridge</span></th>
-          <th class="topic"><a class="topic-link" href="library/2025 - biocompatibility.pdf">Design rules for biocompatible MOFs</a></th>
-        </tr>
-      </table>
-      <p id="previous"><a href="key - works.html">other/previous &rarr;</a></p>
+    <main class="content-scroll">
+      <div class="main-content">
+        <div class="spacer" aria-hidden="true"></div>
 
-      <div id="footer">
-        <p id="links">
-          <a href="mailto:dm958@cam.ac.uk">email</a> . <a href="library/Dhruv_Menon_CV.pdf">cv</a> . <a href="https://www.linkedin.com/in/dhruv-menon/">linkedin</a> .
-          <a href="https://scholar.google.com/citations?user=NMOjZLQAAAAJ&hl=en&oi=ao">scholar</a>
+        <span class="profile-photo">
+          <img class="profile-img" src="assets/Menon - Profile.png" alt="Profile">
+          <span class="profile-hover-text">
+            applied machine learning & molecular design
+            <span class="profile-graph-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          </span>
+        </span>
+
+        <h2>about</h2>
+        <p>
+          I'm Dhruv Menon, an applied <a class="external-link" href="https://scholar.google.com/citations?hl=en&user=NMOjZLQAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener"><span class="text-red">Machine Learning Scientist</span></a><img class="link-icon inline-icon" src="assets/icon-scholar.svg" alt=""> and Research Engineer building <span class="text-red">generative AI</span> systems for scientific discovery. My interests span foundation models, molecular design, protein ML, and integrating machine learning with physics-based simulations.
         </p>
-        <p id="credit">this website theme has been inspired from <a href="https://github.com/joebacchus/joebacchus.github.io">here</a></p>
+        <p>
+          I'm completing my PhD (exp. Jan 2027) in <span class="text-red">Chemical Engineering</span> at the <span class="text-red">University of Cambridge</span><img class="link-icon inline-icon" src="assets/icon-cambridge.png" alt=""> supervised by Prof. David Fairen-Jimenez. I build generative AI systems for the discovery & design of inorganic-organic materials called metal-organic frameworks for applications ranging from drug delivery to carbon capture & water harvesting. I also have interests in mechanistic underpinnings of performance, which I resolve using molecular simulations and statistical mechanics.
+        </p>
+         <p>
+          In 2025, I undertook a research fellowship at <span class="text-red">UC Berkeley</span><img class="link-icon inline-icon" src="assets/icon-berkeley.svg" alt=""> with Prof. Omar Yaghi (Nobel Laureate, 2025), where I worked on generative materials discovery and automated laboratories. I earned my Master's by research (M.Res) in <span class = "text-red">Physical Sciences </span> (2023) from the Cavendish Laboratory, University of Cambridge<img class="link-icon inline-icon" src="assets/icon-cambridge.png" alt=""> and my Bachelors of Technology in <span class = "text-red">Materials Sciences</span> (2022) from the <span class = "text-red">Indian Institute of Technology Gandhinagar</span><img class="link-icon inline-icon" src="assets/icon-iitgn.png" alt="">.
+        </p>
+        <p id="contact">
+          <a class="external-link" href="mailto:dm958@cam.ac.uk">email<img class="link-icon" src="assets/icon-email.svg" alt=""></a>
+          ·
+          <a class="external-link" href="https://github.com/dhruv-menon">github<img class="link-icon" src="assets/icon-github.svg" alt=""></a>
+          ·
+          <a class="external-link" href="https://scholar.google.com/citations?user=NMOjZLQAAAAJ&hl=en&oi=ao">scholar<img class="link-icon" src="assets/icon-scholar.svg" alt=""></a>
+          ·
+          <a class="external-link" href="https://www.linkedin.com/in/dhruv-menon/">linkedin<img class="link-icon" src="assets/icon-linkedin.svg" alt=""></a>
+          ·
+          <a class="external-link" href="assets/cv.pdf" target="_blank" rel="noopener">cv<img class="link-icon" src="assets/icon-cv.svg" alt=""></a>
+        </p>
+
+        <h2>interests</h2>
+        <p>
+          I have eclectic research interests, however, the central `theme' that connects everything is computation, 
+          rational design and accelerated scientific discovery. My interests include (in no particular order): 
+          de novo molecular design, language models, diffusion models, flow models, small-molecule discovery, protein design, 
+          metal-organic frameworks & supramolecular materials, physisorptive carbon capture, gas storage & separations, and drug delivery.</p>
+        <p>
+          On a philosophical note, I'm <span class = "text-red">NOT</span> interested in incremental research (atleast not anymore). I tend to focus on <span class = 'text-red'>moonshots</span>, 
+          and would like to surround myself with people with the same mission & ambition.
+        </p>
+
+        <h2>research</h2>
+        <p class="section-subtitle">Ongoing &amp; recent</p>
+        <h3>Inverse design of metal-organic frameworks</h3>
+        <p class="indent research-description">
+          Developed <span class = "text-red">Nexerra</span>, a generative molecular design framework combining <span class="text-red">transformer-based chemical language models,
+          variational autoencoders, and conditional flow matching</span> for inverse molecular design. Developed <span class="text-red">representation learning</span> methods for molecular embeddings, 
+          latent-space optimization, and conditional molecular generation under chemical validity, synthesizability, and physical design constraints.
+          Implemented <span class="text-red">objective steering</span> for end-to-end AI-guided materials discovery for adsorption, gas storage, water harvesting,
+          and drug delivery.
+        </p>
+        <h3>Predicting protein conformations</h3>
+        <p class="indent research-description">
+          Developing <span class = "text-red">all-atom equivariant </span>neural networks to accelerate molecular dynamics simulations and improve sampling of protein conformational landscapes.
+          Exploring trajectory-learning approaches and protein <span class="text-red">foundation-model embeddings</span> for predicting and generating alternative protein conformations.
+        </p>
+        <h3>Computational drug delivery & nanomedicine</h3>
+        <p class="indent research-description">
+          Developed <span class = "text-red">interpretable machine learning</span> models to predict the biocompatibility of drug delivery systems, enabling
+          <span class = "text-red">high-throughput screening</span> of ~100,000 experimentally reported materials for nanomedicine applications. Built a hierarchical virtual screening 
+          workflow to identify optimal drug carriers for chemotherapeutics. Discovered <span class = "text-red">PCN-222</span> as a promising drug delivery platform, which was subsequently
+          synthesized and tested in mouse models of pancreatic cancer, where the optimized formulation demonstrated reduced tumour growth and metastatic spread.
+        </p>
+        <h3>Confined proton transport</h3>
+        <p class="indent research-description">
+        Developed multiscale simulation workflows integrating <span class="text-red">Grand Canonical Monte Carlo and molecular dynamics</span> to
+        investigate molecular transport, and proton-conduction mechanisms in functional porous materials. Studied diffusion, radial distribution functions, 
+        hydrogen-bond networks, velocity correlations, spatial distributions, and transport behaviour. Integrated molecular simulations with structural and experimental evidence to identify the mechanisms governing
+        transport under nanoconfinement.
+        </p>
+
+        <h2>papers</h2>
+        <p class="section-subtitle">
+          20+ peer-reviewed publications across materials chemistry, molecular simulation, and AI-guided materials design, including Nature Chemistry, Advanced Materials, Chem, Matter, and Chemical Society Reviews. 800+ citations; h-index 16. Full list on <a class="external-link icon-only-link" href="https://scholar.google.com/citations?hl=en&user=NMOjZLQAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener" aria-label="Google Scholar"><img class="link-icon inline-icon" src="assets/icon-scholar.svg" alt=""></a>. ϕ denotes co-first authorship.
+        </p>
+        <ul class="paper-list">
+          <li>
+            <b>Menon, D.</b>, Singh, V., Chen, X., Alizadeh Kiapi, M.R., Zyuzin, I., Macleod, H.W., Rampal, N., Shepard, W., Yaghi, O.M., and Fairen-Jimenez, D., 2026.
+            <b>A chemical language model for reticular materials design.</b>
+            arXiv preprint arXiv:2603.20389 <a class="external-link icon-only-link" href="assets/papers/2026 - Nexerra.pdf" target="_blank" rel="noopener" aria-label="Open paper"><img class="link-icon inline-icon" src="assets/icon-cv.svg" alt=""></a> <i>(JACS, Under Revision)</i>
+          </li>
+          <li>
+            Zhao, Q.<sup>ϕ</sup>, Li, B.<sup>ϕ</sup>, <b>Menon, D.<sup>ϕ</sup></b>, Zhu, C.<sup>ϕ</sup>, Alizadeh Kiapi, M.R., Chen, X., Long, D.-L., Liu, J., Xiao, Z., Yang, D., Fairen-Jimenez, D., Zang, H.-Y., and Xuan, W., 2026.
+            <b>Cation-directed assembly and sequential functionalization enable superprotonic polyanion-organic frameworks for high-power fuel cells.</b>
+            Nature Chemistry. <a class="external-link icon-only-link" href="assets/papers/2026 - Nature Chemistry.pdf" target="_blank" rel="noopener" aria-label="Open paper"><img class="link-icon inline-icon" src="assets/icon-cv.svg" alt=""></a>
+          </li>
+          <li>
+            Melle, F., <b>Menon, D.</b>, Conniot, J., Ostolaza-Paraiso, J., Mercado, S., Oliveira, J., Chen, X., Mendes, B.B., Conde, J., and Fairen-Jimenez, D., 2024.
+            <b>Rational Design of Metal-Organic Frameworks for Pancreatic Cancer Therapy: From Machine Learning Screening to <i>In Vivo</i> Efficacy.</b>
+            Advanced Materials, p.2412757. <a class="external-link icon-only-link" href="assets/papers/2025 - Advanced Materials.pdf" target="_blank" rel="noopener" aria-label="Open paper"><img class="link-icon inline-icon" src="assets/icon-cv.svg" alt=""></a>
+          </li>
+          <li>
+            <b>Menon, D.</b> and Fairen-Jimenez, D., 2025.
+            <b>Guiding the rational design of biocompatible metal-organic frameworks for drug delivery.</b>
+            Matter. <a class="external-link icon-only-link" href="assets/papers/2025 - Matter.pdf" target="_blank" rel="noopener" aria-label="Open paper"><img class="link-icon inline-icon" src="assets/icon-cv.svg" alt=""></a>
+          </li>
+          <li>
+            Chen, X.<sup>ϕ</sup>, <b>Menon, D.<sup>ϕ</sup></b>, Wang, X., He, M., Alizadeh Kiapi, M.R., Asgari, M., Lyu, Y., Tang, X., Keenan, L.L., Shepard, W., Wee, L.H., Yang, S., Farha, O.K., and Fairen-Jimenez, D., 2024.
+            <b>Flexibility-frustrated porosity for enhanced selective CO<sub>2</sub> adsorption in an ultramicroporous metal-organic framework.</b>
+            Chem. <a class="external-link icon-only-link" href="assets/papers/2025 - Chem.pdf" target="_blank" rel="noopener" aria-label="Open paper"><img class="link-icon inline-icon" src="assets/icon-cv.svg" alt=""></a>
+          </li>
+        </ul>
+
+        <h2>notes</h2>
+        <ul>
+          <li>
+            Notes on machine learning, scientific modelling, and research engineering coming soon.
+          </li>
+        </ul>
+
+        <h2>experience</h2>
+        <ol class="timeline-list">
+          <li>
+            <div class="timeline-entry-head">
+              <div>
+                <span class="timeline-title">Winton Cambridge - Berkeley Exchange Fellowship</span>
+                <span class="timeline-subtitle">UC Berkeley</span>
+              </div>
+              <time>2025</time>
+            </div>
+            <p>Awarded a research fellowship at University of California, Berkeley under the supervision of Professor Omar Yaghi to
+              work on the “generative design of metal-organic framework (MOF) water harvestors”.</p>
+          </li>
+          <li>
+            <div class="timeline-entry-head">
+              <div>
+                <span class="timeline-title">Summer Undergraduate Research Fellowship</span>
+                <span class="timeline-subtitle">California Institute of Technology</span>
+              </div>
+              <time>2020</time>
+            </div>
+            <p>Awarded a research fellowship at California Institute of Technology under the guidance of Professor Austin Minnich to work on the
+            “reduction of electronic noise in semiconductors.” [held virtually due to COVID-19]</p>
+          </li>
+        </ol>
+
+        <h2>education</h2>
+        <ol class="timeline-list education-timeline">
+          <li>
+            <div class="timeline-entry-head">
+              <div>
+                <span class="timeline-title">PhD in Chemical Engineering</span>
+                <span class="timeline-subtitle">University of Cambridge</span>
+              </div>
+              <time>2023 - Jan 2027 (Expected)</time>
+            </div>
+            <p>Thesis: "Computational Design of Metal-Organic Frameworks". Publications in leading journals across materials chemistry, molecular simulation, and AI-guided materials design, including Nature Chemistry, Advanced Materials, Chem, Matter, and Chemical Society Reviews</p>
+          </li>
+          <li>
+            <div class="timeline-entry-head">
+              <div>
+                <span class="timeline-title">M.Res in Physical Sciences</span>
+                <span class="timeline-subtitle">University of Cambridge</span>
+              </div>
+              <time>2022 - 2023</time>
+            </div>
+            <p>EPSRC CDT in Nanoscience and Nanotechnology (NanoDTC). Lab rotations with Prof. Jeremy Baumberg on nanophotonics and Prof. Erwin Reisner on adaptive evolution for syngas fermenting bacteria.</p>
+          </li>
+          <li>
+            <div class="timeline-entry-head">
+              <div>
+                <span class="timeline-title">B.Tech in Materials Science</span>
+                <span class="timeline-subtitle">Indian Institute of Technology Gandhinagar</span>
+              </div>
+              <time>2018 - 2022</time>
+            </div>
+            <p>Institute Gold Medal; Director's Silver Medal; Gold Medal for Outstanding Research; Dean's List and Academic Excellence Scholarships. Member of the Institute football team.</p>
+          </li>
+        </ol>
+
+        <p class="theme-credit">Website theme inspired by John Gardner.</p>
+
+        <div class="spacer" aria-hidden="true"></div>
       </div>
-    </div>
-  <script>
-  document.querySelectorAll('a[href$=".pdf"]').forEach((a) => {
-    a.target = '_blank';
-    a.rel = 'noopener';
-  });
-</script>
+    </main>
+
+    <aside class="updates-panel" aria-label="Updates">
+      <div class="updates-header">
+        <span class="updates-motif" aria-hidden="true">
+          <i></i><i></i><i></i>
+        </span>
+        <strong>updates</strong>
+      </div>
+      <article class="update-item">
+        <time datetime="2026-03">July 2026</time>
+        <p><b>Paper accepted in <span class = "text-red">Nature Synthesis.</span></b> Led by colleagues Xu, Lik and Mohammed, we report an elegant hierarchical porous system for record hydrogen and methane storage.</p>
+      </article>
+      <article class="update-item">
+        <time datetime="2026-03">July 2026</time>
+        <p><b>Paper accepted in <span class = "text-red">Nature Protocols.</span></b> I led the development of a protocol for the design of porous materials for heavy-metal remediation and rare-earth element recovery from contaminated water.</p>
+      </article>
+      <article class="update-item">
+        <time datetime="2026-03">June 2026</time>
+        <p><b>Paper published in <span class = "text-red">Nature Chemistry.</span></b> I co-led the development of a new class of (very sexy) materials called polyoxometalate-organic frameworks (or 'POFs') for proton-exchange membrane fuel cells.</p>
+      </article>
+      <article class="update-item">
+        <time datetime="2026-03">Jan 2026</time>
+        <p><b>Paper published in <span class = "text-red">Environmental Science & Technology.</span></b> Led by Swaroop Chakraborty, we map how metal-organic frameworks transform under sequential environmental stresses.</p>
+      </article>
+    </aside>
+
+    <script src="script.js"></script>
   </body>
 </html>
