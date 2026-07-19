@@ -256,6 +256,15 @@ p {
   font-size: var(--font-body);
 }
 
+.profile-header {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  max-width: 100%;
+}
+
 .profile-photo {
   display: flex;
   width: max-content;
@@ -354,7 +363,6 @@ p {
   align-items: center;
   justify-content: center;
   gap: 0.32em;
-  align-self: center;
   width: max-content;
   max-width: 100%;
   margin: 0.45em 0 1.2em;
