@@ -349,6 +349,14 @@ p {
   background: #aecbfa;
 }
 
+#contact {
+  align-self: center;
+  margin: 0.45em 0 1.2em;
+  color: #222222;
+  font-size: var(--font-small);
+  text-align: center;
+}
+
 .external-link {
   color: #222222;
   text-decoration: underline;
