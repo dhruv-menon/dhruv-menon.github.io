@@ -389,6 +389,94 @@ a.icon-only-link::after {
   margin-right: 0.08em;
 }
 
+.latent-panel {
+  position: relative;
+  width: min(580px, 100vw - 40px);
+  margin: 1.3em 50% 0.35em;
+  aspect-ratio: 1000 / 340;
+  overflow: hidden;
+  border: 1px solid #222222;
+  background:
+    linear-gradient(90deg, rgba(34, 34, 34, 0.16) 1px, transparent 1px),
+    linear-gradient(rgba(34, 34, 34, 0.16) 1px, transparent 1px),
+    #fbf7ef;
+  background-size: 34px 34px;
+  transform: translateX(-50%);
+}
+
+.latent-caption {
+  align-self: center;
+  margin: 0 0 1.7em;
+  color: #555555;
+  font-size: 0.9rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.latent-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.latent-field {
+  animation: latent-blob-drift 9s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.latent-field path {
+  fill: #17110f;
+  stroke: rgba(85, 19, 17, 0.7);
+  stroke-width: 18;
+  stroke-linejoin: round;
+}
+
+.latent-field .latent-field-shadow {
+  fill: rgba(40, 7, 7, 0.28);
+  stroke: none;
+}
+
+.latent-bonds line {
+  opacity: 0;
+  stroke: rgba(251, 247, 239, 0.76);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  transition: opacity 160ms ease, stroke-width 160ms ease;
+}
+
+.latent-contours path {
+  fill: none;
+  stroke: rgba(251, 247, 239, 0.22);
+  stroke-width: 2;
+  stroke-dasharray: 9 13;
+}
+
+.latent-atoms circle {
+  fill: #fbf7ef;
+  stroke: rgba(21, 18, 16, 0.92);
+  stroke-width: 4;
+}
+
+.latent-atoms circle:nth-child(2),
+.latent-atoms circle:nth-child(4),
+.latent-atoms circle:nth-child(6) {
+  fill: #4285f4;
+}
+
+@keyframes latent-blob-drift {
+  0% {
+    transform: translate(-7px, 4px) scale(0.985) rotate(-0.6deg);
+  }
+
+  45% {
+    transform: translate(5px, -6px) scale(1.01) rotate(0.4deg);
+  }
+
+  100% {
+    transform: translate(10px, 3px) scale(0.995) rotate(0.8deg);
+  }
+}
+
 .timeline-list {
   position: relative;
   display: grid;
@@ -773,6 +861,13 @@ ul {
     font-size: 0.82rem;
     white-space: normal;
     text-align: center;
+  }
+
+  .latent-panel {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    transform: none;
   }
 
   .updates-panel {
