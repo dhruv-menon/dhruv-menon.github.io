@@ -8,7 +8,7 @@
   --notion-ink: #37352f;
   --font-title: 1.5rem;
   --font-body: 1rem;
-  --font-small: 0.82rem;
+  --font-small: 16px;
 }
 
 @font-face {
@@ -51,7 +51,7 @@ body {
   color: var(--ink);
   background: #ffffff;
   font-family: "Libertinus Sans", "Linux Biolinum O", Optima, Candara, sans-serif;
-  font-size: 15pt;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.4;
   overflow: hidden;
@@ -195,7 +195,7 @@ strong {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  max-width: 40%;
+  max-width: 42%;
   margin: 0 auto;
 }
 
