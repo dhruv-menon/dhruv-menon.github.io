@@ -350,11 +350,18 @@ p {
 }
 
 #contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.32em;
   align-self: center;
+  width: max-content;
+  max-width: 100%;
   margin: 0.45em 0 1.2em;
   color: #222222;
   font-size: var(--font-small);
   text-align: center;
+  white-space: nowrap;
 }
 
 .external-link {
