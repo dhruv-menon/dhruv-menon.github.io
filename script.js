@@ -1,6 +1,24 @@
 const tocList = document.getElementById("toc-list");
 const headers = document.querySelectorAll("h2");
 const contentScroll = document.querySelector(".content-scroll");
+const themeToggle = document.querySelector(".theme-toggle");
+
+const applyTheme = (theme) => {
+  const dark = theme === "dark";
+  document.body.classList.toggle("dark", dark);
+  themeToggle?.setAttribute("aria-pressed", String(dark));
+};
+
+const savedTheme = localStorage.getItem("theme");
+const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+applyTheme(savedTheme || (prefersDark ? "dark" : "light"));
+
+themeToggle?.addEventListener("click", () => {
+  const theme = document.body.classList.contains("dark") ? "light" : "dark";
+  localStorage.setItem("theme", theme);
+  applyTheme(theme);
+});
 
 if (tocList && contentScroll && headers.length) {
   headers.forEach((header) => {
@@ -80,20 +98,20 @@ if (latentPanel) {
   });
 
   const renderLatentSpace = () => {
-    frame += 0.035;
+    frame += 0.052;
 
     atoms.forEach((atom, index) => {
       const dx = pointer.x - atom.baseX;
       const dy = pointer.y - atom.baseY;
       const distance = Math.hypot(dx, dy);
       const influence = pointer.active ? atom.pull * Math.exp(-distance / 420) : 0;
-      const driftX = Math.sin(frame + index * 1.7) * 5;
-      const driftY = Math.cos(frame * 0.8 + index) * 4;
+      const driftX = Math.sin(frame + index * 1.7) * 11;
+      const driftY = Math.cos(frame * 0.8 + index) * 8;
       const targetX = atom.baseX + dx * influence + driftX;
       const targetY = atom.baseY + dy * influence + driftY;
 
-      atom.x += (targetX - atom.x) * 0.08;
-      atom.y += (targetY - atom.y) * 0.08;
+      atom.x += (targetX - atom.x) * 0.11;
+      atom.y += (targetY - atom.y) * 0.11;
       atom.element.setAttribute("cx", atom.x.toFixed(2));
       atom.element.setAttribute("cy", atom.y.toFixed(2));
     });
@@ -114,7 +132,7 @@ if (latentPanel) {
       bond.element.setAttribute("x2", to.x.toFixed(2));
       bond.element.setAttribute("y2", to.y.toFixed(2));
       bond.element.style.opacity = opacity.toFixed(2);
-      bond.element.style.strokeWidth = (2 + opacity * 3).toFixed(2);
+      bond.element.style.strokeWidth = (2.4 + opacity * 3.4).toFixed(2);
     });
 
     requestAnimationFrame(renderLatentSpace);
