@@ -470,8 +470,10 @@ a.icon-only-link::after {
 
 .latent-panel {
   position: relative;
-  width: min(580px, 100vw - 40px);
-  margin: 1.3em 50% 0.35em;
+  align-self: center;
+  width: 100%;
+  max-width: 580px;
+  margin: 1.3em 0 0.35em;
   aspect-ratio: 1000 / 340;
   overflow: hidden;
   border: 1px solid var(--ink);
@@ -480,7 +482,6 @@ a.icon-only-link::after {
     linear-gradient(rgba(34, 34, 34, 0.16) 1px, transparent 1px),
     var(--wash);
   background-size: 34px 34px;
-  transform: translateX(-50%);
 }
 
 .latent-caption {
@@ -1167,17 +1168,32 @@ ul {
   text-decoration: none;
 }
 
+.toc-title {
+  margin: 0;
+  padding-right: 20px;
+  color: var(--ink);
+  font-size: var(--font-small);
+  font-weight: 600;
+}
+
 .note-post {
   max-width: 43%;
 }
 
 .note-kicker {
   margin-bottom: 0.2em;
-  color: #777777;
+  color: var(--muted);
   font-size: var(--font-small);
   font-weight: 500;
   font-variant-caps: small-caps;
   letter-spacing: 0.04em;
+}
+
+.post-date {
+  margin-top: -0.4em;
+  margin-bottom: 1.1em;
+  color: var(--muted);
+  font-size: var(--font-small);
 }
 
 .note-post pre {
@@ -1185,8 +1201,8 @@ ul {
   overflow-x: auto;
   margin: 0.65em 0 0.9em;
   padding: 0.75em 0.85em;
-  border-left: 2px solid #d8d8d8;
-  background: #fafafa;
+  border-left: 2px solid var(--rule);
+  background: var(--wash);
 }
 
 .note-post code {
@@ -1200,11 +1216,24 @@ ul {
   overflow-x: auto;
   margin: 0.7em 0 0.9em;
   padding: 0.7em 0;
-  color: #111111;
+  color: var(--ink);
   font-family: "Libertinus Sans", "Linux Biolinum O", Optima, Candara, sans-serif;
   font-size: var(--font-body);
   text-align: center;
   white-space: nowrap;
+}
+
+.note-post hr {
+  width: 100%;
+  margin: 1.5em 0 0.9em;
+  border: 0;
+  border-top: 1px solid var(--rule);
+}
+
+.post-footnotes {
+  margin-top: 0;
+  padding-left: 1.25em;
+  font-size: var(--font-body);
 }
 
 .frac {
@@ -1285,10 +1314,7 @@ ul {
   }
 
   .latent-panel {
-    width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-    transform: none;
+    max-width: 100%;
   }
 
   .updates-panel {
