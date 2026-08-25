@@ -2,7 +2,9 @@
 ._*
 
 # Local-only drafts that should not be published to GitHub Pages.
-archive/
+archive/*
+!archive/
+!archive/llm-competence.html
 
 # Editor and OS metadata.
 .vscode/
