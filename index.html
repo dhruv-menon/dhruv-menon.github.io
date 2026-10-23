@@ -14,7 +14,7 @@
     <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
     <link rel="icon" href="assets/favicon.png?v=2" type="image/png">
     <link rel="shortcut icon" href="assets/favicon.ico?v=2">
-    <link rel="stylesheet" href="styles.css?v=3">
+    <link rel="stylesheet" href="styles.css?v=9">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -55,6 +55,8 @@
     </script>
   </head>
   <body>
+    <a class="wordmark" href="index.html"><span class="wordmark-mark" aria-hidden="true"></span>Dhruv Menon</a>
+
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
       <span aria-hidden="true"></span>
     </button>
@@ -71,7 +73,10 @@
 
         <div class="profile-header">
           <span class="profile-photo">
-            <img class="profile-img" src="assets/Menon - Profile.png" alt="Profile">
+            <span class="profile-frame">
+              <img class="profile-img" src="assets/Menon - Profile.png" alt="Dhruv Menon">
+              <img class="profile-illustration" src="assets/profile-illustration.png" alt="" aria-hidden="true">
+            </span>
             <span class="profile-hover-text">
               navigating the latent space of life
               <span class="profile-graph-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
@@ -89,54 +94,41 @@
             ·
             <a class="external-link" href="assets/cv.pdf" target="_blank" rel="noopener">cv<img class="link-icon" src="assets/icon-cv.svg" alt=""></a>
           </p>
+
+          <a class="news-pill" href="assets/papers/2026 - Nexerra.pdf" target="_blank" rel="noopener">
+            <span class="news-pill-label">New</span>
+            <span class="news-pill-text">Paper in <i>JACS</i>: chemical language models for MOF linker design</span>
+          </a>
         </div>
 
         <h2>about</h2>
         <p>
-          I'm Dhruv Menon, an applied <a class="external-link" href="https://scholar.google.com/citations?hl=en&user=NMOjZLQAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener"><span class="text-red">Machine Learning Scientist</span></a><img class="link-icon inline-icon" src="assets/icon-scholar.svg" alt=""> and Research Engineer building <span class="text-red">generative AI</span> systems for scientific discovery. My work combines foundation models, chemical language models, representation learning, flow-based generation, and physics-aware simulation workflows to navigate chemical design spaces and accelerate scientific discovery. 
+          I'm Dhruv Menon, an applied <a class="external-link" href="https://scholar.google.com/citations?hl=en&user=NMOjZLQAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Machine Learning Scientist</a><img class="link-icon inline-icon" src="assets/icon-scholar.svg" alt=""> and Research Engineer building <span class="text-red">generative AI</span> systems for scientific discovery. My work combines foundation models, chemical language models, representation learning, flow-based generation, and physics-aware simulation workflows to navigate chemical design spaces and accelerate scientific discovery. 
         </p>
         <p>
-          I'm completing my PhD (thesis submission: Sep 2026) in <span class="text-red">Chemical Engineering</span> at the <span class="text-red">University of Cambridge</span><img class="link-icon inline-icon" src="assets/icon-cambridge.png" alt=""> supervised by Prof. David Fairen-Jimenez. I build generative AI systems for the discovery & design of inorganic-organic materials called metal-organic frameworks for applications ranging from drug delivery to carbon capture & water harvesting. I also have interests in mechanistic underpinnings of performance, which I resolve using molecular simulations and statistical mechanics.
+          I'm completing my PhD (thesis submitted: Oct 2026) in Chemical Engineering at the University of Cambridge<img class="link-icon inline-icon" src="assets/icon-cambridge.png" alt=""> supervised by Prof. David Fairen-Jimenez. I build generative AI systems for the discovery & design of inorganic-organic materials called metal-organic frameworks for applications ranging from drug delivery to carbon capture & water harvesting. I also have interests in mechanistic underpinnings of performance, which I resolve using molecular simulations and statistical mechanics.
         </p>
          <p>
-          In 2025, I undertook a research fellowship at <span class="text-red">UC Berkeley</span><img class="link-icon inline-icon" src="assets/icon-berkeley.svg" alt=""> with Prof. Omar Yaghi (Nobel Laureate, 2025), where I worked on generative materials discovery and automated laboratories. I earned my Master's by research (M.Res) in <span class = "text-red">Physical Sciences </span> (2023) from the Cavendish Laboratory, University of Cambridge<img class="link-icon inline-icon" src="assets/icon-cambridge.png" alt=""> and my Bachelors of Technology in <span class = "text-red">Materials Sciences</span> (2022) from the <span class = "text-red">Indian Institute of Technology Gandhinagar</span><img class="link-icon inline-icon" src="assets/icon-iitgn.png" alt="">.
+          In 2025, I undertook a research fellowship at <span class="text-red">UC Berkeley</span><img class="link-icon inline-icon" src="assets/icon-berkeley.svg" alt=""> with Prof. Omar Yaghi (Nobel Laureate, 2025), where I worked on generative materials discovery and automated laboratories. I earned my Master's by research (M.Res) in Physical Sciences (2023) from the Cavendish Laboratory, University of Cambridge<img class="link-icon inline-icon" src="assets/icon-cambridge.png" alt=""> and my Bachelors of Technology in Materials Sciences (2022) from the Indian Institute of Technology Gandhinagar<img class="link-icon inline-icon" src="assets/icon-iitgn.png" alt="">.<span class="end-mark" aria-hidden="true"></span>
         </p>
 
-        <section class="latent-panel" aria-label="Interactive generative latent space">
-          <svg class="latent-svg" viewBox="0 0 1000 340" role="img" aria-label="A molecular graph embedded in a soft latent field">
-            <g class="latent-field">
-              <path d="M110 184 C112 96 205 92 250 104 C312 121 334 35 417 62 C466 78 461 134 520 112 C607 80 632 48 704 82 C775 115 763 170 835 132 C896 101 942 139 920 202 C905 245 850 236 803 248 C733 265 733 318 655 298 C603 285 594 232 544 262 C487 296 424 281 391 236 C350 181 319 254 260 278 C187 308 98 260 110 184Z"></path>
-              <path class="latent-field-shadow" d="M125 190 C130 118 213 116 262 127 C321 140 349 66 414 87 C468 104 477 155 526 136 C603 107 635 82 696 107 C762 134 755 192 824 158 C874 134 911 164 893 208 C876 249 813 235 780 261 C733 296 680 308 631 273 C584 240 562 256 524 279 C462 314 402 277 374 238 C340 191 322 271 250 281 C180 291 119 253 125 190Z"></path>
-            </g>
-            <g class="latent-bonds">
-              <line data-latent-bond="0-1" data-base-bond="true"></line>
-              <line data-latent-bond="1-2" data-base-bond="true"></line>
-              <line data-latent-bond="2-3" data-base-bond="true"></line>
-              <line data-latent-bond="3-4" data-base-bond="true"></line>
-              <line data-latent-bond="4-5" data-base-bond="true"></line>
-              <line data-latent-bond="0-2"></line>
-              <line data-latent-bond="1-3"></line>
-              <line data-latent-bond="2-4"></line>
-              <line data-latent-bond="3-5"></line>
-              <line data-latent-bond="0-3"></line>
-              <line data-latent-bond="1-4"></line>
-              <line data-latent-bond="2-5"></line>
-            </g>
-            <g class="latent-contours" aria-hidden="true">
-              <path d="M128 225 C210 132 300 250 386 160 S570 90 655 172 S785 265 890 160"></path>
-              <path d="M160 118 C260 48 350 152 460 95 S650 65 760 132"></path>
-            </g>
-            <g class="latent-atoms">
-              <circle data-latent-node="0" data-x="185" data-y="175" data-pull="0.12" r="13"></circle>
-              <circle data-latent-node="1" data-x="310" data-y="108" data-pull="0.16" r="9"></circle>
-              <circle data-latent-node="2" data-x="430" data-y="185" data-pull="0.20" r="15"></circle>
-              <circle data-latent-node="3" data-x="575" data-y="118" data-pull="0.18" r="11"></circle>
-              <circle data-latent-node="4" data-x="720" data-y="205" data-pull="0.15" r="14"></circle>
-              <circle data-latent-node="5" data-x="835" data-y="115" data-pull="0.10" r="8"></circle>
-            </g>
+        <section class="latent-panel" tabindex="0" aria-label="Interactive latent space. Move the cursor to explore; click or press Enter to draw a new sample.">
+          <svg class="latent-svg" viewBox="0 0 1000 420" role="img" aria-label="An ink-like latent space with coloured clusters that lean towards the cursor">
+            <defs>
+              <filter id="latent-goo" filterUnits="userSpaceOnUse" x="0" y="0" width="1000" height="420">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="16" result="blur"></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 30 -13" result="shape"></feColorMatrix>
+                <feFlood class="latent-ink-fill"></feFlood>
+                <feComposite in2="shape" operator="in"></feComposite>
+              </filter>
+            </defs>
+            <g class="latent-ink" filter="url(#latent-goo)"></g>
+            <g class="latent-bonds"></g>
+            <g class="latent-points"></g>
+            <g class="latent-modes"></g>
           </svg>
         </section>
-        <p class="latent-caption">Let's navigate the latent space together.</p>
+        <p class="latent-caption">Let's navigate the latent space together.<span class="latent-hint">move to explore &middot; click to sample</span></p>
 
         <h2>interests</h2>
         <p>
@@ -145,82 +137,98 @@
           de novo molecular design, language models, diffusion models, flow models, small-molecule discovery, protein design, 
           metal-organic frameworks & supramolecular materials, physisorptive carbon capture, gas storage & separations, and drug delivery.</p>
         <p>
-          On a philosophical note, I'm <span class = "text-red">NOT</span> interested in incremental research (atleast not anymore). I tend to focus on <span class = 'text-red'>moonshots</span>, 
+          On a philosophical note, I'm NOT interested in incremental research (atleast not anymore). I tend to focus on <span class="text-red">moonshots</span>, 
           and would like to surround myself with people with the same mission & ambition.
         </p>
 
         <h2>research</h2>
         <p class="section-subtitle">Ongoing &amp; recent</p>
+        <p class="kicker">generative design</p>
         <h3>Inverse design of metal-organic frameworks</h3>
         <p class="indent research-description">
-          Developed <span class = "text-red">Nexerra</span>, a generative molecular design framework combining <span class="text-red">transformer-based chemical language models,
-          variational autoencoders, and conditional flow matching</span> for inverse molecular design. Developed <span class="text-red">representation learning</span> methods for molecular embeddings, 
+          Developed <span class="text-red">Nexerra</span>, a generative molecular design framework combining transformer-based chemical language models,
+          variational autoencoders, and conditional flow matching for inverse molecular design. Developed representation learning methods for molecular embeddings, 
           latent-space optimization, and conditional molecular generation under chemical validity, synthesizability, and physical design constraints.
-          Implemented <span class="text-red">objective steering</span> for end-to-end AI-guided materials discovery for adsorption, gas storage, water harvesting,
+          Implemented objective steering for end-to-end AI-guided materials discovery for adsorption, gas storage, water harvesting,
           and drug delivery.
         </p>
-        <svg class="mof-animation" viewBox="0 0 360 126" role="img" aria-label="Animated MOF generative design motif">
-          <g class="mof-latent-trace" aria-hidden="true">
-            <path d="M20 66 C60 20 106 98 146 56 S224 30 260 78 S310 110 340 56"></path>
-          </g>
-          <g class="mof-bonds">
-            <line x1="88" y1="34" x2="178" y2="34"></line>
-            <line x1="178" y1="34" x2="268" y2="34"></line>
-            <line x1="88" y1="92" x2="178" y2="92"></line>
-            <line x1="178" y1="92" x2="268" y2="92"></line>
-            <line x1="88" y1="34" x2="88" y2="92"></line>
-            <line x1="178" y1="34" x2="178" y2="92"></line>
-            <line x1="268" y1="34" x2="268" y2="92"></line>
-            <line x1="88" y1="34" x2="178" y2="92"></line>
-            <line x1="178" y1="34" x2="268" y2="92"></line>
-          </g>
-          <g class="mof-nodes">
-            <circle cx="88" cy="34" r="8"></circle>
-            <circle cx="178" cy="34" r="8"></circle>
-            <circle cx="268" cy="34" r="8"></circle>
-            <circle cx="88" cy="92" r="8"></circle>
-            <circle cx="178" cy="92" r="8"></circle>
-            <circle cx="268" cy="92" r="8"></circle>
-          </g>
-          <g class="mof-precursors" aria-hidden="true">
-            <circle cx="42" cy="42" r="4"></circle>
-            <circle cx="56" cy="87" r="3"></circle>
-            <circle cx="121" cy="70" r="3"></circle>
-            <circle cx="220" cy="61" r="3"></circle>
-            <circle cx="309" cy="39" r="4"></circle>
-            <circle cx="324" cy="91" r="3"></circle>
-          </g>
-        </svg>
+        <figure class="chart">
+          <figcaption class="chart-head"><span class="chart-title">Building frameworks from latent space</span><span class="chart-subtitle">Linkers and metal nodes assembled by a generative model</span></figcaption>
+          <svg class="mof-animation" viewBox="0 0 360 126" role="img" aria-label="Animated MOF generative design motif">
+            <g class="mof-latent-trace" aria-hidden="true">
+              <path d="M20 66 C60 20 106 98 146 56 S224 30 260 78 S310 110 340 56"></path>
+            </g>
+            <g class="mof-bonds">
+              <line x1="88" y1="34" x2="178" y2="34"></line>
+              <line x1="178" y1="34" x2="268" y2="34"></line>
+              <line x1="88" y1="92" x2="178" y2="92"></line>
+              <line x1="178" y1="92" x2="268" y2="92"></line>
+              <line x1="88" y1="34" x2="88" y2="92"></line>
+              <line x1="178" y1="34" x2="178" y2="92"></line>
+              <line x1="268" y1="34" x2="268" y2="92"></line>
+              <line x1="88" y1="34" x2="178" y2="92"></line>
+              <line x1="178" y1="34" x2="268" y2="92"></line>
+            </g>
+            <g class="mof-nodes">
+              <circle cx="88" cy="34" r="8"></circle>
+              <circle cx="178" cy="34" r="8"></circle>
+              <circle cx="268" cy="34" r="8"></circle>
+              <circle cx="88" cy="92" r="8"></circle>
+              <circle cx="178" cy="92" r="8"></circle>
+              <circle cx="268" cy="92" r="8"></circle>
+            </g>
+            <g class="mof-precursors" aria-hidden="true">
+              <circle cx="42" cy="42" r="4"></circle>
+              <circle cx="56" cy="87" r="3"></circle>
+              <circle cx="121" cy="70" r="3"></circle>
+              <circle cx="220" cy="61" r="3"></circle>
+              <circle cx="309" cy="39" r="4"></circle>
+              <circle cx="324" cy="91" r="3"></circle>
+            </g>
+          </svg>
+          <p class="chart-source">Source: Menon et al., <i>JACS</i>, 2026</p>
+        </figure>
+        <p class="kicker">protein dynamics</p>
         <h3>Predicting protein conformations</h3>
         <p class="indent research-description">
-          Developing <span class = "text-red">all-atom equivariant </span>neural networks to accelerate molecular dynamics simulations and improve sampling of protein conformational landscapes.
-          Exploring trajectory-learning approaches and protein <span class="text-red">foundation-model embeddings</span> for predicting and generating alternative protein conformations.
+          Developing <span class="text-red">all-atom equivariant</span> neural networks to accelerate molecular dynamics simulations and improve sampling of protein conformational landscapes.
+          Exploring trajectory-learning approaches and protein foundation-model embeddings for predicting and generating alternative protein conformations.
         </p>
-        <svg class="protein-blob" viewBox="0 0 360 126" role="img" aria-label="Dynamic conformational blob motif">
-          <g class="protein-blob-object">
-            <path d="M92 70 C94 28 143 28 166 44 C194 64 204 24 238 38 C280 56 286 112 236 102 C204 96 202 78 174 92 C132 112 90 102 92 70Z"></path>
-            <path class="protein-blob-core" d="M116 68 C120 46 146 48 164 56 C190 68 202 46 226 54 C250 62 254 88 228 90 C198 92 194 72 170 82 C142 94 112 88 116 68Z"></path>
-          </g>
-          <path class="protein-blob-trace" d="M70 74 C112 30 148 96 188 58 S266 28 304 76"></path>
-        </svg>
+        <figure class="chart">
+          <figcaption class="chart-head"><span class="chart-title">Many shapes, not one</span><span class="chart-subtitle">A protein drifting between conformations</span></figcaption>
+          <svg class="protein-blob" viewBox="0 0 360 126" role="img" aria-label="Dynamic conformational blob motif">
+            <g class="protein-blob-object">
+              <path d="M92 70 C94 28 143 28 166 44 C194 64 204 24 238 38 C280 56 286 112 236 102 C204 96 202 78 174 92 C132 112 90 102 92 70Z"></path>
+              <path class="protein-blob-core" d="M116 68 C120 46 146 48 164 56 C190 68 202 46 226 54 C250 62 254 88 228 90 C198 92 194 72 170 82 C142 94 112 88 116 68Z"></path>
+            </g>
+            <path class="protein-blob-trace" d="M70 74 C112 30 148 96 188 58 S266 28 304 76"></path>
+          </svg>
+          <p class="chart-source">Source: work in progress</p>
+        </figure>
+        <p class="kicker">drug delivery</p>
         <h3>Computational drug delivery & nanomedicine</h3>
         <p class="indent research-description">
-          Developed <span class = "text-red">interpretable machine learning</span> models to predict the biocompatibility of drug delivery systems, enabling
-          <span class = "text-red">high-throughput screening</span> of ~100,000 experimentally reported materials for nanomedicine applications. Built a hierarchical virtual screening 
-          workflow to identify optimal drug carriers for chemotherapeutics. Discovered <span class = "text-red">PCN-222</span> as a promising drug delivery platform, which was subsequently
+          Developed interpretable machine learning models to predict the biocompatibility of drug delivery systems, enabling
+          high-throughput screening of ~100,000 experimentally reported materials for nanomedicine applications. Built a hierarchical virtual screening 
+          workflow to identify optimal drug carriers for chemotherapeutics. Discovered <span class="text-red">PCN-222</span> as a promising drug delivery platform, which was subsequently
           synthesized and tested in mouse models of pancreatic cancer, where the optimized formulation demonstrated reduced tumour growth and metastatic spread.
         </p>
-        <svg class="delivery-funnel" viewBox="0 0 360 126" role="img" aria-label="Animated horizontal drug-delivery screening funnel">
-          <path class="delivery-funnel-line" d="M40 24 C116 52 202 42 320 48"></path>
-          <path class="delivery-funnel-line delivery-funnel-line-lower" d="M40 104 C116 76 202 86 320 78"></path>
-          <line class="delivery-gate" x1="278" y1="52" x2="278" y2="75"></line>
-          <g class="delivery-blobs">
-            <circle cx="82" cy="60" r="10"></circle>
-            <circle cx="136" cy="72" r="8"></circle>
-            <circle cx="194" cy="61" r="9"></circle>
-          </g>
-          <circle class="delivery-hit" cx="302" cy="63" r="8"></circle>
-        </svg>
+        <figure class="chart">
+          <figcaption class="chart-head"><span class="chart-title">Screening for a carrier</span><span class="chart-subtitle">~100,000 candidate materials narrowed to one</span></figcaption>
+          <svg class="delivery-funnel" viewBox="0 0 360 126" role="img" aria-label="Animated horizontal drug-delivery screening funnel">
+            <path class="delivery-funnel-line" d="M40 24 C116 52 202 42 320 48"></path>
+            <path class="delivery-funnel-line delivery-funnel-line-lower" d="M40 104 C116 76 202 86 320 78"></path>
+            <line class="delivery-gate" x1="278" y1="52" x2="278" y2="75"></line>
+            <g class="delivery-blobs">
+              <circle cx="82" cy="60" r="10"></circle>
+              <circle cx="136" cy="72" r="8"></circle>
+              <circle cx="194" cy="61" r="9"></circle>
+            </g>
+            <circle class="delivery-hit" cx="302" cy="63" r="8"></circle>
+          </svg>
+          <p class="chart-source">Source: Melle, Menon et al., <i>Advanced Materials</i>, 2024</p>
+        </figure>
+        <p class="kicker">proton transport</p>
         <h3>Confined proton transport</h3>
         <p class="indent research-description">
         Developed multiscale simulation workflows integrating <span class="text-red">Grand Canonical Monte Carlo and molecular dynamics</span> to
@@ -228,173 +236,199 @@
         hydrogen-bond networks, velocity correlations, spatial distributions, and transport behaviour. Integrated molecular simulations with structural and experimental evidence to identify the mechanisms governing
         transport under nanoconfinement.
         </p>
-        <svg class="proton-wire" viewBox="0 0 360 126" role="img" aria-label="Animated proton hopping along a transport wire">
-          <path class="proton-wire-path" d="M34 67 C72 36 92 94 128 62 S186 34 220 66 S282 92 326 50"></path>
-          <g class="proton-clusters">
-            <g class="proton-cluster proton-cluster-a">
-              <circle class="oxygen" cx="64" cy="72" r="7"></circle>
-              <circle class="hydrogen" cx="55" cy="66" r="4"></circle>
-              <circle class="hydrogen" cx="72" cy="62" r="4"></circle>
+        <figure class="chart">
+          <figcaption class="chart-head"><span class="chart-title">Protons on the move</span><span class="chart-subtitle">Proton transfer along a hydrogen-bonded chain in a pore</span></figcaption>
+          <svg class="proton-wire" viewBox="0 0 360 126" role="img" aria-label="Animated proton hopping along a transport wire">
+            <path class="proton-wire-path" d="M34 67 C72 36 92 94 128 62 S186 34 220 66 S282 92 326 50"></path>
+            <g class="proton-clusters">
+              <g class="proton-cluster proton-cluster-a">
+                <circle class="oxygen" cx="64" cy="72" r="7"></circle>
+                <circle class="hydrogen" cx="55" cy="66" r="4"></circle>
+                <circle class="hydrogen" cx="72" cy="62" r="4"></circle>
+              </g>
+              <g class="proton-cluster proton-cluster-b">
+                <circle class="oxygen" cx="160" cy="58" r="7"></circle>
+                <circle class="hydrogen" cx="151" cy="51" r="4"></circle>
+                <circle class="hydrogen" cx="169" cy="51" r="4"></circle>
+                <circle class="hydrogen" cx="160" cy="69" r="4"></circle>
+              </g>
+              <g class="proton-cluster proton-cluster-c">
+                <circle class="oxygen" cx="250" cy="72" r="7"></circle>
+                <circle class="hydrogen" cx="242" cy="64" r="4"></circle>
+                <circle class="hydrogen" cx="258" cy="62" r="4"></circle>
+              </g>
             </g>
-            <g class="proton-cluster proton-cluster-b">
-              <circle class="oxygen" cx="160" cy="58" r="7"></circle>
-              <circle class="hydrogen" cx="151" cy="51" r="4"></circle>
-              <circle class="hydrogen" cx="169" cy="51" r="4"></circle>
-              <circle class="hydrogen" cx="160" cy="69" r="4"></circle>
-            </g>
-            <g class="proton-cluster proton-cluster-c">
-              <circle class="oxygen" cx="250" cy="72" r="7"></circle>
-              <circle class="hydrogen" cx="242" cy="64" r="4"></circle>
-              <circle class="hydrogen" cx="258" cy="62" r="4"></circle>
-            </g>
-          </g>
-        </svg>
+          </svg>
+          <p class="chart-source">Source: Zhao, Li, Menon, Zhu et al., <i>Nature Chemistry</i>, 2026</p>
+        </figure>
 
         <h2>papers</h2>
-        <p class="section-subtitle">
+        <p class="section-intro">
           20+ peer-reviewed publications across materials chemistry, molecular simulation, and AI-guided materials design, including Nature Chemistry, Advanced Materials, Chem, Matter, and Chemical Society Reviews. 900+ citations; h-index 16. Full list on <a class="external-link icon-only-link" href="https://scholar.google.com/citations?hl=en&user=NMOjZLQAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener" aria-label="Google Scholar"><img class="link-icon inline-icon" src="assets/icon-scholar.svg" alt=""></a>. ϕ denotes co-first authorship.
         </p>
-        <ul class="paper-list">
+        <ol class="index-list">
           <li>
-            <span class="paper-tag">generative design</span>
-            <b>Menon, D.</b>, Singh, V., Chen, X., Alizadeh Kiapi, M.R., Zyuzin, I., MacLeod, H.W., Rampal, N., Shepard, W., Yaghi, O.M. and Fairen-Jimenez, D., 2026.
-            <b>Flow-Guided Chemical Language Modeling for Linker Design in Reticular Chemistry.</b>
-            <i>Journal of the American Chemical Society</i>, <i>148</i>(37), pp.39546-39555. <a class="external-link icon-only-link" href="assets/papers/2026 - Nexerra.pdf" target="_blank" rel="noopener" aria-label="Open paper"><img class="link-icon inline-icon" src="assets/icon-cv.svg" alt=""></a>
+            <span class="index-date">2026</span>
+            <div class="index-body">
+              <p class="kicker">generative design</p>
+              <a class="index-title" href="assets/papers/2026 - Nexerra.pdf" target="_blank" rel="noopener">Flow-Guided Chemical Language Modeling for Linker Design in Reticular Chemistry</a>
+              <p class="index-byline"><b>Menon, D.</b>, Singh, V., Chen, X., Alizadeh Kiapi, M.R., Zyuzin, I., MacLeod, H.W., Rampal, N., Shepard, W., Yaghi, O.M. and Fairen-Jimenez, D. &middot; <i>Journal of the American Chemical Society</i>, 148(37), pp.39546-39555</p>
+            </div>
           </li>
           <li>
-            <span class="paper-tag">proton transport</span>
-            Zhao, Q.<sup>ϕ</sup>, Li, B.<sup>ϕ</sup>, <b>Menon, D.<sup>ϕ</sup></b>, Zhu, C.<sup>ϕ</sup>, Alizadeh Kiapi, M.R., Chen, X., Long, D.-L., Liu, J., Xiao, Z., Yang, D., Fairen-Jimenez, D., Zang, H.-Y., and Xuan, W., 2026.
-            <b>Cation-directed assembly and sequential functionalization enable superprotonic polyanion-organic frameworks for high-power fuel cells.</b>
-            Nature Chemistry. <a class="external-link icon-only-link" href="assets/papers/2026 - Nature Chemistry.pdf" target="_blank" rel="noopener" aria-label="Open paper"><img class="link-icon inline-icon" src="assets/icon-cv.svg" alt=""></a>
+            <span class="index-date">2026</span>
+            <div class="index-body">
+              <p class="kicker">proton transport</p>
+              <a class="index-title" href="assets/papers/2026 - Nature Chemistry.pdf" target="_blank" rel="noopener">Cation-directed assembly and sequential functionalization enable superprotonic polyanion-organic frameworks for high-power fuel cells</a>
+              <p class="index-byline">Zhao, Q.<sup>ϕ</sup>, Li, B.<sup>ϕ</sup>, <b>Menon, D.<sup>ϕ</sup></b>, Zhu, C.<sup>ϕ</sup>, Alizadeh Kiapi, M.R., Chen, X., Long, D.-L., Liu, J., Xiao, Z., Yang, D., Fairen-Jimenez, D., Zang, H.-Y., and Xuan, W. &middot; <i>Nature Chemistry</i></p>
+            </div>
           </li>
           <li>
-            <span class="paper-tag">drug delivery</span>
-            Melle, F., <b>Menon, D.</b>, Conniot, J., Ostolaza-Paraiso, J., Mercado, S., Oliveira, J., Chen, X., Mendes, B.B., Conde, J., and Fairen-Jimenez, D., 2024.
-            <b>Rational Design of Metal-Organic Frameworks for Pancreatic Cancer Therapy: From Machine Learning Screening to <i>In Vivo</i> Efficacy.</b>
-            Advanced Materials, p.2412757. <a class="external-link icon-only-link" href="assets/papers/2025 - Advanced Materials.pdf" target="_blank" rel="noopener" aria-label="Open paper"><img class="link-icon inline-icon" src="assets/icon-cv.svg" alt=""></a>
+            <span class="index-date">2025</span>
+            <div class="index-body">
+              <p class="kicker">ML screening</p>
+              <a class="index-title" href="assets/papers/2025 - Matter.pdf" target="_blank" rel="noopener">Guiding the rational design of biocompatible metal-organic frameworks for drug delivery</a>
+              <p class="index-byline"><b>Menon, D.</b> and Fairen-Jimenez, D. &middot; <i>Matter</i></p>
+            </div>
           </li>
           <li>
-            <span class="paper-tag">ML screening</span>
-            <b>Menon, D.</b> and Fairen-Jimenez, D., 2025.
-            <b>Guiding the rational design of biocompatible metal-organic frameworks for drug delivery.</b>
-            Matter. <a class="external-link icon-only-link" href="assets/papers/2025 - Matter.pdf" target="_blank" rel="noopener" aria-label="Open paper"><img class="link-icon inline-icon" src="assets/icon-cv.svg" alt=""></a>
+            <span class="index-date">2024</span>
+            <div class="index-body">
+              <p class="kicker">drug delivery</p>
+              <a class="index-title" href="assets/papers/2025 - Advanced Materials.pdf" target="_blank" rel="noopener">Rational Design of Metal-Organic Frameworks for Pancreatic Cancer Therapy: From Machine Learning Screening to <i>In Vivo</i> Efficacy</a>
+              <p class="index-byline">Melle, F., <b>Menon, D.</b>, Conniot, J., Ostolaza-Paraiso, J., Mercado, S., Oliveira, J., Chen, X., Mendes, B.B., Conde, J., and Fairen-Jimenez, D. &middot; <i>Advanced Materials</i>, p.2412757</p>
+            </div>
           </li>
           <li>
-            <span class="paper-tag">gas separation</span>
-            Chen, X.<sup>ϕ</sup>, <b>Menon, D.<sup>ϕ</sup></b>, Wang, X., He, M., Alizadeh Kiapi, M.R., Asgari, M., Lyu, Y., Tang, X., Keenan, L.L., Shepard, W., Wee, L.H., Yang, S., Farha, O.K., and Fairen-Jimenez, D., 2024.
-            <b>Flexibility-frustrated porosity for enhanced selective CO<sub>2</sub> adsorption in an ultramicroporous metal-organic framework.</b>
-            Chem. <a class="external-link icon-only-link" href="assets/papers/2025 - Chem.pdf" target="_blank" rel="noopener" aria-label="Open paper"><img class="link-icon inline-icon" src="assets/icon-cv.svg" alt=""></a>
+            <span class="index-date">2024</span>
+            <div class="index-body">
+              <p class="kicker">gas separation</p>
+              <a class="index-title" href="assets/papers/2025 - Chem.pdf" target="_blank" rel="noopener">Flexibility-frustrated porosity for enhanced selective CO<sub>2</sub> adsorption in an ultramicroporous metal-organic framework</a>
+              <p class="index-byline">Chen, X.<sup>ϕ</sup>, <b>Menon, D.<sup>ϕ</sup></b>, Wang, X., He, M., Alizadeh Kiapi, M.R., Asgari, M., Lyu, Y., Tang, X., Keenan, L.L., Shepard, W., Wee, L.H., Yang, S., Farha, O.K., and Fairen-Jimenez, D. &middot; <i>Chem</i></p>
+            </div>
           </li>
-        </ul>
+        </ol>
 
         <h2 id="notes">The PhenoMenon</h2>
         <p class="section-subtitle">Essays &amp; shortposts on AI, science &amp; life.</p>
-        <ul>
+        <ol class="index-list">
           <li>
-            <a class="external-link" href="archive/llm-competence.html">Large language models &amp; the illusion of competence</a>
-          </li>
-        </ul>
-
-        <h2>experience</h2>
-        <ol class="timeline-list">
-          <li>
-            <div class="timeline-entry-head">
-              <div>
-                <span class="timeline-title">Winton Cambridge - Berkeley Exchange Fellowship</span>
-                <span class="timeline-subtitle">UC Berkeley</span>
-              </div>
-              <time>2025</time>
+            <span class="index-date">Soon</span>
+            <div class="index-body">
+              <p class="kicker">shortpost</p>
+              <a class="index-title" href="archive/llm-competence.html">Large language models &amp; the illusion of competence</a>
+              <p class="index-byline">Dhruv Menon</p>
             </div>
-            <p>Awarded a research fellowship at University of California, Berkeley under the supervision of Professor Omar Yaghi to
-              work on the “generative design of metal-organic framework (MOF) water harvestors”.</p>
-          </li>
-          <li>
-            <div class="timeline-entry-head">
-              <div>
-                <span class="timeline-title">Summer Undergraduate Research Fellowship</span>
-                <span class="timeline-subtitle">California Institute of Technology</span>
-              </div>
-              <time>2020</time>
-            </div>
-            <p>Awarded a research fellowship at California Institute of Technology under the guidance of Professor Austin Minnich to work on the
-            “reduction of electronic noise in semiconductors.” [held virtually due to COVID-19]</p>
           </li>
         </ol>
 
-        <h2>education</h2>
-        <ol class="timeline-list education-timeline">
+        <h2>background</h2>
+        <ol class="index-list">
           <li>
-            <div class="timeline-entry-head">
-              <div>
-                <span class="timeline-title">PhD in Chemical Engineering</span>
-                <span class="timeline-subtitle">University of Cambridge</span>
-              </div>
-              <time>2023 - Jan 2027 (Expected)</time>
+            <span class="index-date">2023&ndash;26</span>
+            <div class="index-body">
+              <p class="kicker">phd</p>
+              <span class="index-title">PhD in Chemical Engineering</span>
+              <p class="index-byline">University of Cambridge &middot; Supervisor: Prof. David Fairen-Jimenez</p>
+              <p class="index-byline">Thesis: <i>Computational Design of Metal-Organic Frameworks</i>, submitted October 2026</p>
             </div>
-            <p>Thesis: "Computational Design of Metal-Organic Frameworks". Publications in leading journals across materials chemistry, molecular simulation, and AI-guided materials design, including Nature Chemistry, Advanced Materials, Chem, Matter, and Chemical Society Reviews</p>
           </li>
           <li>
-            <div class="timeline-entry-head">
-              <div>
-                <span class="timeline-title">M.Res in Physical Sciences</span>
-                <span class="timeline-subtitle">University of Cambridge</span>
-              </div>
-              <time>2022 - 2023</time>
+            <span class="index-date">2025</span>
+            <div class="index-body">
+              <p class="kicker">fellowship</p>
+              <span class="index-title">Winton Cambridge&ndash;Berkeley Exchange Fellowship</span>
+              <p class="index-byline">UC Berkeley &middot; With Prof. Omar Yaghi</p>
+              <p class="index-byline">Generative design of metal-organic framework (MOF) water harvesters</p>
             </div>
-            <p>EPSRC CDT in Nanoscience and Nanotechnology (NanoDTC). Lab rotations with Prof. Jeremy Baumberg on nanophotonics and Prof. Erwin Reisner on adaptive evolution for syngas fermenting bacteria.</p>
           </li>
           <li>
-            <div class="timeline-entry-head">
-              <div>
-                <span class="timeline-title">B.Tech in Materials Science</span>
-                <span class="timeline-subtitle">Indian Institute of Technology Gandhinagar</span>
-              </div>
-              <time>2018 - 2022</time>
+            <span class="index-date">2022&ndash;23</span>
+            <div class="index-body">
+              <p class="kicker">m.res</p>
+              <span class="index-title">M.Res in Physical Sciences</span>
+              <p class="index-byline">University of Cambridge &middot; EPSRC CDT in Nanoscience and Nanotechnology (NanoDTC)</p>
+              <p class="index-byline">Rotations with Prof. Jeremy Baumberg (nanophotonics) and Prof. Erwin Reisner (adaptive evolution of syngas-fermenting bacteria)</p>
             </div>
-            <p>Institute Gold Medal; Director's Silver Medal; Gold Medal for Outstanding Research; Dean's List and Academic Excellence Scholarships. Member of the Institute football team.</p>
+          </li>
+          <li>
+            <span class="index-date">2020</span>
+            <div class="index-body">
+              <p class="kicker">fellowship</p>
+              <span class="index-title">Summer Undergraduate Research Fellowship</span>
+              <p class="index-byline">California Institute of Technology, remote due to COVID-19 &middot; With Prof. Austin Minnich</p>
+              <p class="index-byline">Reducing electronic noise in semiconductors</p>
+            </div>
+          </li>
+          <li>
+            <span class="index-date">2018&ndash;22</span>
+            <div class="index-body">
+              <p class="kicker">b.tech</p>
+              <span class="index-title">B.Tech in Materials Science</span>
+              <p class="index-byline">Indian Institute of Technology Gandhinagar</p>
+              <p class="index-byline">Honours: Institute Gold Medal; Director&rsquo;s Silver Medal; Gold Medal for Outstanding Research; Dean&rsquo;s List; Academic Excellence Scholarships. Institute football team.</p>
+            </div>
           </li>
         </ol>
 
-        <p class="theme-credit">Website theme inspired by John Gardner.</p>
+        <footer class="site-footer">
+          <p class="site-footer-links">
+            <a href="mailto:dm958@cam.ac.uk">Email</a>
+            <a href="https://github.com/dhruv-menon">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=NMOjZLQAAAAJ&hl=en&oi=ao">Scholar</a>
+            <a href="https://www.linkedin.com/in/dhruv-menon/">LinkedIn</a>
+            <a href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
+          </p>
+          <p>Last updated October 2026 &middot; Set in Georgia &amp; Libertinus Sans &middot; Theme inspired by John Gardner</p>
+        </footer>
 
         <div class="spacer" aria-hidden="true"></div>
       </div>
     </main>
 
     <aside class="updates-panel" aria-label="Updates">
-      <div class="updates-header">
-        <span class="updates-motif" aria-hidden="true">
-          <i></i><i></i><i></i>
-        </span>
-        <strong>updates</strong>
-      </div>
+      <p class="updates-heading" role="heading" aria-level="2">updates</p>
+      <p class="updates-year">2026</p>
       <article class="update-item">
-        <time datetime="2026-09">September 2026</time>
-        <p><b>Paper published in <span class = "text-red">JACS.</span></b> I led the development of a chemical language model for the inverse design of metal-organic frameworks.</p>
+        <p class="update-meta"><time datetime="2026-10">Oct 2026</time> &middot; <span class="update-kind">milestone</span></p>
+        <h3 class="update-title">PhD thesis submitted</h3>
+        <p class="update-text"><i>Computational Design of Metal-Organic Frameworks</i>, University of Cambridge.</p>
       </article>
       <article class="update-item">
-        <time datetime="2026-08">August 2026</time>
-        <p><b>Paper published in <span class = "text-red">Nature Protocols.</span></b> I led the development of a protocol for the design of porous materials for heavy-metal remediation and rare-earth element recovery from contaminated water.</p>
+        <p class="update-meta"><time datetime="2026-09">Sep 2026</time> &middot; <span class="update-kind">paper</span></p>
+        <h3 class="update-title"><a href="assets/papers/2026 - Nexerra.pdf" target="_blank" rel="noopener">Chemical language models for MOF linker design</a></h3>
+        <p class="update-text">I led the development of a chemical language model for the inverse design of metal-organic frameworks. <i>JACS</i>.</p>
       </article>
       <article class="update-item">
-        <time datetime="2026-07">July 2026</time>
-        <p><b>Paper accepted in <span class = "text-red">Nature Synthesis.</span></b> Led by colleagues Xu, Lik and Mohammed, we report an elegant hierarchical porous system for record hydrogen and methane storage.</p>
+        <p class="update-meta"><time datetime="2026-08">Aug 2026</time> &middot; <span class="update-kind">paper</span></p>
+        <h3 class="update-title">A protocol for porous materials in water remediation</h3>
+        <p class="update-text">I led a protocol for designing porous materials for heavy-metal remediation and rare-earth element recovery from contaminated water. <i>Nature Protocols</i>.</p>
       </article>
       <article class="update-item">
-        <time datetime="2026-06">June 2026</time>
-        <p><b>Paper published in <span class = "text-red">Nature Chemistry.</span></b> I co-led the development of a new class of (very sexy) materials called polyoxometalate-organic frameworks (or 'POFs') for proton-exchange membrane fuel cells.</p>
+        <p class="update-meta"><time datetime="2026-07">Jul 2026</time> &middot; <span class="update-kind">paper</span></p>
+        <h3 class="update-title"><a href="assets/papers/2026 - Nature Synthesis.pdf" target="_blank" rel="noopener">Hierarchical pores for record hydrogen and methane storage</a></h3>
+        <p class="update-text">Led by colleagues Xu, Lik and Mohammed, an elegant hierarchical porous system. Accepted in <i>Nature Synthesis</i>.</p>
       </article>
-      <article class="update-item">
-        <time datetime="2026-01">Jan 2026</time>
-        <p><b>Paper published in <span class = "text-red">Environmental Science & Technology</span> and <span class = "text-red">ACS Nano.</span></b> Led by Swaroop Chakraborty, we map how metal-organic frameworks transform under sequential environmental stresses and correlate transformation with observed toxicity in freshwater invertebrates.</p>
+      <article class="update-item" data-extra>
+        <p class="update-meta"><time datetime="2026-06">Jun 2026</time> &middot; <span class="update-kind">paper</span></p>
+        <h3 class="update-title"><a href="assets/papers/2026 - Nature Chemistry.pdf" target="_blank" rel="noopener">Polyoxometalate-organic frameworks for fuel cells</a></h3>
+        <p class="update-text">I co-led the development of a new class of (very sexy) materials, &lsquo;POFs&rsquo;, for proton-exchange membrane fuel cells. <i>Nature Chemistry</i>.</p>
       </article>
-      <article class="update-item">
-        <time datetime="2025-09">Sep 2025</time>
-        <p><b>I wrap up my fellowship at <span class = "text-red">UC Berkeley</span></b> working with Prof. Omar Yaghi <span class = "text-red">(who was awarded Nobel Prize in Chemistry in the same month!)</span>. I had a great time working on the generative design of water-harvesting MOFs and automated laboratories.</p>
+      <article class="update-item" data-extra>
+        <p class="update-meta"><time datetime="2026-01">Jan 2026</time> &middot; <span class="update-kind">papers</span></p>
+        <h3 class="update-title"><a href="assets/papers/2026 - EST.pdf" target="_blank" rel="noopener">How MOFs transform under environmental stress</a></h3>
+        <p class="update-text">Led by Swaroop Chakraborty, we map how MOFs transform under sequential environmental stresses and how that relates to toxicity in freshwater invertebrates. <a class="external-link" href="assets/papers/2026 - EST.pdf" target="_blank" rel="noopener"><i>Environmental Science &amp; Technology</i></a> and <a class="external-link" href="assets/papers/2025 - ACS Nano.pdf" target="_blank" rel="noopener"><i>ACS Nano</i></a>.</p>
       </article>
+      <p class="updates-year" data-extra>2025</p>
+      <article class="update-item" data-extra>
+        <p class="update-meta"><time datetime="2025-09">Sep 2025</time> &middot; <span class="update-kind">fellowship</span></p>
+        <h3 class="update-title">Wrapping up at UC Berkeley</h3>
+        <p class="update-text">Generative design of water-harvesting MOFs and automated laboratories with Prof. Omar Yaghi, who was awarded the Nobel Prize in Chemistry the same month.</p>
+      </article>
+      <button class="updates-more" type="button" aria-expanded="false">Show all updates</button>
     </aside>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=8"></script>
     <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "23cf56a447e04d6f9a863f311c7dfba7"}'></script><!-- End Cloudflare Web Analytics -->
   </body>
 </html>
