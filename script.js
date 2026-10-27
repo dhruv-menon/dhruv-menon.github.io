@@ -70,14 +70,14 @@ if (tocList && contentScroll && headers.length) {
 const profileFrame = document.querySelector(".profile-frame");
 
 if (profileFrame) {
-  const illustration = profileFrame.querySelector(".profile-illustration");
-  // Only enable the reveal once the illustration has actually loaded.
-  const enableReveal = () => profileFrame.classList.add("has-illustration");
+  const reveal = profileFrame.querySelector(".profile-reveal");
+  // Only enable the reveal once the photo has actually loaded.
+  const enableReveal = () => profileFrame.classList.add("has-reveal");
 
-  if (illustration?.complete && illustration.naturalWidth) {
+  if (reveal?.complete && reveal.naturalWidth) {
     enableReveal();
   } else {
-    illustration?.addEventListener("load", enableReveal);
+    reveal?.addEventListener("load", enableReveal);
   }
 
   profileFrame.addEventListener("pointerenter", (event) => {
@@ -86,7 +86,7 @@ if (profileFrame) {
     profileFrame.style.setProperty("--reveal-y", `${(((event.clientY - rect.top) / rect.height) * 100).toFixed(1)}%`);
   });
 
-  // Touch screens have no hover, so a tap toggles the illustration instead.
+  // Touch screens have no hover, so a tap toggles the photo instead.
   profileFrame.addEventListener("pointerup", (event) => {
     if (event.pointerType === "touch") profileFrame.classList.toggle("revealed");
   });

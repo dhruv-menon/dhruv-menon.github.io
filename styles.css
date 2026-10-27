@@ -379,8 +379,8 @@ p {
   line-height: 0;
 }
 
-/* The illustration spreads like ink from wherever the cursor enters. */
-.profile-illustration {
+/* The real photo spreads like ink from wherever the cursor enters. */
+.profile-reveal {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -391,17 +391,17 @@ p {
   transition: clip-path 700ms cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
-.profile-frame.has-illustration .profile-illustration {
+.profile-frame.has-reveal .profile-reveal {
   visibility: visible;
 }
 
-.profile-frame.has-illustration:hover .profile-illustration,
-.profile-frame.revealed .profile-illustration {
+.profile-frame.has-reveal:hover .profile-reveal,
+.profile-frame.revealed .profile-reveal {
   clip-path: circle(145% at var(--reveal-x, 50%) var(--reveal-y, 50%));
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .profile-illustration {
+  .profile-reveal {
     transition: none;
   }
 }
